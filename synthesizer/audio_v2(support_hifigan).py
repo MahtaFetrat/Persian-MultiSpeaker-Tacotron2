@@ -121,8 +121,8 @@ def inv_preemphasis(wav, k, inv_preemphasize=True):
 
 def _build_mel_basis(hparams):
     return librosa.filters.mel(
-        hparams.sample_rate,
-        hparams.n_fft,
+        sr=hparams.sample_rate,
+        n_fft=hparams.n_fft,
         n_mels=hparams.num_mels,
         fmin=hparams.fmin,
         fmax=hparams.fmax,
