@@ -24,7 +24,7 @@ def text_to_sequence(text, cleaner_names):
     if cleaner_names != ['persian_cleaners']:
         return 'cleaner is not persian!'
     sequence = []
-    for phoneme in text.split():
+    for phoneme in text:
         sequence.append(_symbol_to_id[phoneme])
     # print(sequence)
     # print("************")
