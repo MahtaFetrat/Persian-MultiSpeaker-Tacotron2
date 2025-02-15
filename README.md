@@ -29,16 +29,18 @@ dataset/persian_date/
 
 **3. Preprocessing:**
 ```
-python synthesizer_preprocess_audio.py dataset --datasets_name persian_data --subfolders train_data --no_alignments
+python3 synthesizer_preprocess_audio.py dataset --datasets_name persian_data --subfolders train_data --no_alignments --skip_existing --n_processes 4 --out_dir dataset/train/SV2TTS/synthesizer
+python3 synthesizer_preprocess_audio.py dataset --datasets_name persian_data --subfolders test_data --no_alignments --skip_existing --n_processes 4 --out_dir dataset/test/SV2TTS/synthesizer
 ```
 2. **Embedding Preprocessing**  
 ```
-python synthesizer_preprocess_embeds.py dataset/SV2TTS/synthesizer
+python3 synthesizer_preprocess_embeds.py dataset/train/SV2TTS/synthesizer
+python3 synthesizer_preprocess_embeds.py dataset/test/SV2TTS/synthesizer
 ```
 
 **4. Train synthesizer:**
 ```
-python synthesizer_train.py my_run dataset/SV2TTS/synthesizer
+python3 synthesizer_train.py my_run dataset/train/SV2TTS/synthesizer
 ```
 
 ## Inference
@@ -48,7 +50,7 @@ To generate a wav file, place all trained models in the `saved_models/final_mode
 ### Using WavRNN as Vocoder
 
 ```
-python inference.py --vocoder "WavRNN" --text "یک نمونه از خروجی" --ref_wav_path "/path/to/sample/reference.wav" --test_name "test1"
+python3 inference.py --vocoder "WavRNN" --text "یک نمونه از خروجی" --ref_wav_path "/path/to/sample/reference.wav" --test_name "test1"
 ```
 
 ### Using HiFiGAN as Vocoder (Recommended)
@@ -64,7 +66,7 @@ download_pretrained_model("vctk_hifigan.v1", "saved_models/final_models/vocoder_
 ```
 3. **Run Inference with HiFiGAN**
 ```
-python inference.py --vocoder "HiFiGAN" --text "یک نمونه از خروجی" --ref_wav_path "/path/to/sample/reference.wav" --test_name "test1"
+python3 inference.py --vocoder "HiFiGAN" --text "یک نمونه از خروجی" --ref_wav_path "/path/to/sample/reference.wav" --test_name "test1"
 ```
 ## Output Samples
 
