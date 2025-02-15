@@ -1,19 +1,12 @@
-<<<<<<< HEAD
 # MultiSpeaker Tacotron2 in Persian Language
 This repository implements [Transfer Learning from Speaker Verification to
 Multispeaker Text-To-Speech Synthesis](https://arxiv.org/pdf/1806.04558.pdf) (SV2TTS) for the Persian language. The core codebase is derived from [this repository](https://github.com/Adibian/Persian-MultiSpeaker-Tacotron2), which has been updated to address deprecated features and complete setup for Persian language compatibility. The original codebase, sourced from [this repository](https://github.com/CorentinJ/Real-Time-Voice-Cloning/tree/master), has been modified to support Persian language requirements.
-=======
-## MultiSpeaker Tacotron2 for Persian Language
-
-This repository contains a Persian language adaptation of [Transfer Learning from Speaker Verification to Multispeaker Text-To-Speech Synthesis (SV2TTS)](https://arxiv.org/pdf/1806.04558.pdf). The core implementation is based on [this repository](https://github.com/CorentinJ/Real-Time-Voice-Cloning/tree/master), modified to work with Persian text and phoneme data.
->>>>>>> 7c22fb2af8744a834e0e8ce31bc2701ea0eab59d
 
 <img src="https://github.com/majidAdibian77/persian-SV2TTS/blob/master/results/model.JPG" width="800"> 
 
 ---
 
 ## Quickstart
-<<<<<<< HEAD
 **1. Character-set definition:**
 
 Open the `synthesizer/persian_utils/symbols.py` file and update the `_characters` variable to include all the characters that exist in your text files. Most of Persian characters and symbols are already included in this variable as follows:
@@ -22,12 +15,6 @@ _characters = "ءابتثجحخدذرزسشصضطظعغفقلمنهويِپچژ�
 ```
 
 **2. Data structures:**
-=======
-
-### Data Structure
-
-Organize your data as follows:
->>>>>>> 7c22fb2af8744a834e0e8ce31bc2701ea0eab59d
 ```
 dataset/persian_date/
     train_data/
@@ -40,13 +27,7 @@ dataset/persian_date/
         ...
 ```
 
-<<<<<<< HEAD
 **3. Preprocessing:**
-=======
-### Preprocessing
-
-1. **Audio Preprocessing**  
->>>>>>> 7c22fb2af8744a834e0e8ce31bc2701ea0eab59d
 ```
 python synthesizer_preprocess_audio.py dataset --datasets_name persian_data --subfolders train_data --no_alignments
 ```
@@ -55,25 +36,15 @@ python synthesizer_preprocess_audio.py dataset --datasets_name persian_data --su
 python synthesizer_preprocess_embeds.py dataset/SV2TTS/synthesizer
 ```
 
-<<<<<<< HEAD
 **4. Train synthesizer:**
-=======
-### Train the Synthesizer
-
-To begin training the synthesizer model:
->>>>>>> 7c22fb2af8744a834e0e8ce31bc2701ea0eab59d
 ```
 python synthesizer_train.py my_run dataset/SV2TTS/synthesizer
 ```
 
-<<<<<<< HEAD
 **5. Inference:**
 
 For synthesizing wav file you must put all final models in `saved_models/final_models` directory.
 If you do not train speaker encoder and vocoder models you can use pretrained models in `saved_models/default`.
-=======
----
->>>>>>> 7c22fb2af8744a834e0e8ce31bc2701ea0eab59d
 
 ## Inference
 
