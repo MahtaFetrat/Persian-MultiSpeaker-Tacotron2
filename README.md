@@ -6,7 +6,7 @@ Multispeaker Text-To-Speech Synthesis](https://arxiv.org/pdf/1806.04558.pdf) (SV
 
 ---
 
-## Quickstart
+## Training
 **1. Character-set definition:**
 
 Open the `synthesizer/persian_utils/symbols.py` file and update the `_characters` variable to include all the characters that exist in your text files. Most of Persian characters and symbols are already included in this variable as follows:
