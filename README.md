@@ -41,14 +41,9 @@ python synthesizer_preprocess_embeds.py dataset/SV2TTS/synthesizer
 python synthesizer_train.py my_run dataset/SV2TTS/synthesizer
 ```
 
-**5. Inference:**
-
-For synthesizing wav file you must put all final models in `saved_models/final_models` directory.
-If you do not train speaker encoder and vocoder models you can use pretrained models in `saved_models/default`.
-
 ## Inference
 
-To generate a wav file, place all trained models in the `saved_models/final_models` directory. If you haven’t trained the speaker encoder or vocoder models, you can use pretrained models from `saved_models/default`.
+To generate a wav file, place all trained models in the `saved_models/final_models` directory. If you haven’t trained the speaker encoder or vocoder models, you can use pretrained models from `saved_models/default`. These models include `encoder.pt`, your latest synthesizer checkpoint like `synthesizer_000300.pt`, and a vocoder as follows.
 
 ### Using WavRNN as Vocoder
 
