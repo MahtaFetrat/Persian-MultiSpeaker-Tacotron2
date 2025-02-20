@@ -2,7 +2,7 @@
 This repository implements [Transfer Learning from Speaker Verification to
 Multispeaker Text-To-Speech Synthesis](https://arxiv.org/pdf/1806.04558.pdf) (SV2TTS) for the Persian language. The core codebase is derived from [this repository](https://github.com/Adibian/Persian-MultiSpeaker-Tacotron2), which has been updated to address deprecated features and complete setup for Persian language compatibility. The original codebase, sourced from [this repository](https://github.com/CorentinJ/Real-Time-Voice-Cloning/tree/master), has been modified to support Persian language requirements.
 
-<img src="https://github.com/majidAdibian77/persian-SV2TTS/blob/master/results/model.JPG" width="800"> 
+<img src="https://github.com/majidAdibian77/persian-SV2TTS/blob/master/resources/model.JPG" width="800"> 
 
 ---
 
