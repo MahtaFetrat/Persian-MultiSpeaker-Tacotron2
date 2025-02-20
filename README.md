@@ -81,6 +81,13 @@ You can find output samples synthesized by the trained model from this study (li
 ## License  
 This project is based on [Real-Time-Voice-Cloning](https://github.com/CorentinJ/Real-Time-Voice-Cloning),  
 which is licensed under the MIT License.  
-The modifications for Persian language support are © 2025 Majid Adibian.  
+```
+Modified & original work Copyright (c) 2019 Corentin Jemine (https://github.com/CorentinJ)  
+Original work Copyright (c) 2018 Rayhane Mama (https://github.com/Rayhane-mamah)  
+Original work Copyright (c) 2019 fatchord (https://github.com/fatchord)  
+Original work Copyright (c) 2015 braindead (https://github.com/braindead)  
+Modified work Copyright (c) 2025 Majid Adibian (https://github.com/Adibian)  
+Modified work Copyright (c) 2025 Mahta Fetrat (https://github.com/MahtaFetrat)
+``` 
 
   
